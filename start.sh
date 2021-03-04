@@ -21,7 +21,7 @@ printf "${TF_VAR_AWS_CONSOLE_LINK}\n\n"
 printf "AWS Console Username:\n"
 printf "${TF_VAR_AWS_USER}\n\n"
 printf "AWS Console Password:\n"
-printf "${TF_VAR_AWS_PASSWORD}\n\n"
+printf "%s\n\n" ${TF_VAR_AWS_PASSWORD}
 
 envsubst < ./aws-console.template > /mnt/c/Users/Administrator/Desktop/"Amazon Web Services Sign-In.url"
 
